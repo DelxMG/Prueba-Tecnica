@@ -19,11 +19,6 @@ public class DiscoDuro extends DiscoMagnetico implements PuedeEscribir {
     public void escribirDatos() {
         System.out.println("Escribiendo datos en el disco duro con un cabezal magnético...");
     }
-
-    @Override
-    public void almacenarDatos() {
-        System.out.println("Los datos han sido almacenados en el disco duro.");
-    }
 }
 
 

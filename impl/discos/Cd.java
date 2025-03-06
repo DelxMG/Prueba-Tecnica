@@ -16,7 +16,7 @@ public class Cd extends DiscoOptico {
 
     @Override
     public void leerDatos() {
-        System.out.println("Leyendo datos del CD...");
+        System.out.println("Leyendo datos del CD con un láser...");
     }
 
     @Override
@@ -24,10 +24,6 @@ public class Cd extends DiscoOptico {
         System.out.println("Escribiendo datos en el CD con un láser...");
     }
 
-    @Override
-    public void almacenarDatos() {
-        System.out.println("Los datos han sido almacenados en el CD.");
-    }
 }
 
 

@@ -27,6 +27,7 @@ public class Main {
         // CD
         System.out.println("\nProbando CD:");
         miCd.girar();
+        miCd.almacenarDatos();
         miCd.leerDatos();
         miCd.escribirDatos();
         miCd.almacenarDatos();
@@ -35,6 +36,7 @@ public class Main {
         // Blu-ray (solo lectura)
         System.out.println("\nProbando Blu-ray:");
         miBluRay.girar();
+        miBluRay.almacenarDatos();
         miBluRay.leerDatos();
         miBluRay.escribirDatos(); // Debería dar error porque no es reescribible.
         System.out.println(miBluRay);
@@ -42,6 +44,7 @@ public class Main {
         // Blu-ray Reescribible
         System.out.println("\nProbando Blu-ray Reescribible:");
         miBluRayRW.girar();
+        miBluRayRW.almacenarDatos();
         miBluRayRW.leerDatos();
         miBluRayRW.escribirDatos(); // Este sí puede escribir.
         System.out.println(miBluRayRW);
@@ -49,6 +52,7 @@ public class Main {
         // LP
         System.out.println("\nProbando Vinilo:");
         miLp.girar();
+        miLp.almacenarDatos();
         miLp.leerDatos();
         miLp.almacenarDatos();
         System.out.println(miLp);
@@ -56,6 +60,7 @@ public class Main {
         // Disco Duro
         System.out.println("\nProbando Disco Duro:");
         miDiscoDuro.girar();
+        miDiscoDuro.almacenarDatos();
         miDiscoDuro.leerDatos();
         miDiscoDuro.escribirDatos();
         miDiscoDuro.almacenarDatos();

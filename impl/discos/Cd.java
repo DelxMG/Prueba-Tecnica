@@ -1,18 +1,22 @@
-public class Cd extends Disco implements DispositivoAlmacenamiento {
+package impl.discos;
+
+import interfaces.PuedeEscribir;
+import models.DiscoOptico;
+
+public class Cd extends DiscoOptico {
 
     public Cd (double capacidad, String nombre, String contenido) {
-        super(capacidad, nombre, contenido);
-        this.tipoDisco = "CD";
+        super(capacidad, nombre, contenido, TipoDisco.CD);
     }
 
     @Override
-    public void girarDisco() {
+    public void girar() {
         System.out.println("El CD gira...");
     }
 
     @Override
     public void leerDatos() {
-        System.out.println("Leyendo datos del CD con un láser...");
+        System.out.println("Leyendo datos del CD...");
     }
 
     @Override

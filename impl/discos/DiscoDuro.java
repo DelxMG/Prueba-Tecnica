@@ -1,13 +1,13 @@
-public class DiscoDuro extends Disco implements DispositivoAlmacenamiento {
+package impl.discos;
+
+import interfaces.PuedeEscribir;
+import models.Disco;
+import models.DiscoMagnetico;
+
+public class DiscoDuro extends DiscoMagnetico implements PuedeEscribir {
 
     public DiscoDuro (double capacidad, String nombre, String contenido){
-        super(capacidad, nombre, contenido);
-        this.tipoDisco = "Disco Duro";
-    }
-
-    @Override
-    public void girarDisco() {
-        System.out.println("El disco duro gira...");
+        super(capacidad, nombre, contenido, TipoDisco.DISCO_DURO);
     }
 
     @Override

@@ -61,7 +61,7 @@ public abstract class Disco extends DispositivoAlmacenamiento implements PuedeGi
 
 
     @Override
-    public void girar() { // got you!
+    public void girar() {
         System.out.println("El " +  getTipoDisco()  + " está girando...");
     }
 
